@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 const Header = props =>{
+    console.log(props.router);
     return(
         <div>
             <h1 className='site-heading text-center text-white d-none d-lg-block'>
@@ -16,7 +17,7 @@ const Header = props =>{
                     </button>
                     <div className='collapse navbar-collapse' id='navbarResponsive'>
                         <ul className='navbar-nav mx-auto'>
-                        <li className='nav-item active px-lg-4'>
+                        <li className='nav-item px-lg-4'>
                             <Link to='/' className='nav-link text-uppercase text-expanded'>Inicio</Link>
                         </li>
                         <li className='nav-item px-lg-4'>
