@@ -8,6 +8,7 @@ import Sobre from './Components/Sobre';
 import Contato from './Components/Contato';
 import Campanhas from './Components/Campanhas';
 import Admin from './Components/Admin';
+import Login from './Components/Login';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/contato" component={Contato}/>
           <Route path="/campanhas" component={Campanhas}/>
           <Route path="/admin" component={Admin}/>
+          <Route path="/login" component={Login}/>
           <Footer/>
         </div>
       </Router>
@@ -28,4 +30,5 @@ class App extends Component {
 }
 
 export default App;
+
 
