@@ -39,8 +39,12 @@ class AdminCampanhas extends Component{
 
         base.push('campanhas', {
             data: {nome, descricao},
-        },err =>{
-            console.log(err);
+            then: err =>{
+                if(!err){
+                    this.nome.value = '';
+                    this.descricao.value = '';
+                }
+            }
         })
     }
     render(){
